@@ -1,1 +1,13 @@
-const i=document.getElementById('input-el'),b=document.getElementById('convert-btn'),l=document.getElementById('length'),v=document.getElementById('volume'),m=document.getElementById('mass');function c(){let n=+i.value;l.textContent=`${n} meters = ${(n*3.281).toFixed(3)} feet | ${n} feet = ${(n/3.281).toFixed(3)} meters`;v.textContent=`${n} liters = ${(n*0.264).toFixed(3)} gallons | ${n} gallons = ${(n/0.264).toFixed(3)} liters`;m.textContent=`${n} kilos = ${(n*2.204).toFixed(3)} pounds | ${n} pounds = ${(n/2.204).toFixed(3)} kilos`;}b.onclick=c;c();
+const i = document.getElementById("input-el"),
+  b = document.getElementById("convert-btn"),
+  l = document.getElementById("length"),
+  v = document.getElementById("volume"),
+  m = document.getElementById("mass");
+function c() {
+  let n = +i.value;
+  l.textContent = `${n} meters = ${(n * 3.281).toFixed(3)} feet | ${n} feet = ${(n / 3.281).toFixed(3)} meters`;
+  v.textContent = `${n} liters = ${(n * 0.264).toFixed(3)} gallons | ${n} gallons = ${(n / 0.264).toFixed(3)} liters`;
+  m.textContent = `${n} kilos = ${(n * 2.204).toFixed(3)} pounds | ${n} pounds = ${(n / 2.204).toFixed(3)} kilos`;
+}
+b.onclick = c;
+c();
